@@ -1,2 +1,8 @@
 streamlit
 pymongo
+requests
+pydantic
+langchain
+langchain-core
+langgraph
+langchain-groq
