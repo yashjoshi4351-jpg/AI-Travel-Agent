@@ -2,7 +2,7 @@ from pymongo import MongoClient
 from datetime import datetime
 
 # Connect MongoDB
-client = MongoClient("mongodb+srv://yashjoshi4351_db_user:<YashJoshi9079074990>@agentdb.oucd4py.mongodb.net/?")
+client = MongoClient("mongodb+srv://yashjoshi4351_db_user:<YashJoshi9079074990>@agentdb.oucd4py.mongodb.net/?appName=AgentDB")
 
 db = client["ai_travel_agent"]
 history_collection = db["search_history"]
