@@ -115,7 +115,7 @@ import requests
 def search_flights(origin: str, destination: str, date: str, return_date: str):
 
 
-    FLIGHTAPI_KEY = Flight_Search_API.get_secret_value()
+    FLIGHTAPI_KEY = Flight_Search_API
 
     search_url = "https://serpapi.com/search.json"
 
@@ -166,7 +166,7 @@ def flight_agent(state: PlannerState) ->PlannerState:
 # Hotel Agent
 
 def search_hotels(city: str, checkin_date: str, checkout_date: str):
-    HOTELAPI_KEY = Hotel_Search_API.get_secret_value()
+    HOTELAPI_KEY = Hotel_Search_API
 
     url = "https://serpapi.com/search.json"
 
