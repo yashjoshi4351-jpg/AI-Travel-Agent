@@ -6,7 +6,7 @@ from pydantic import SecretStr
 
 import os
 
-GROQ_API_KEY  = os.getenv("groq")
+GROQ_API_KEY  = "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"
 Flight_Search_API = os.getenv("serp")
 Hotel_Search_API = os.getenv("serp")
 
