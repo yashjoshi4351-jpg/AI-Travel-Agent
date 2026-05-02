@@ -6,9 +6,9 @@ from pydantic import SecretStr
 
 import os
 
-GROQ_API_KEY  = os.getenv("GROQ")
-Flight_Search_API = os.getenv("SERP")
-Hotel_Search_API = os.getenv("SERP")
+GROQ_API_KEY  = os.getenv("groq")
+Flight_Search_API = os.getenv("serp")
+Hotel_Search_API = os.getenv("serp")
 
 if GROQ_API_KEY:
   print("Groq API Key retrived!")
