@@ -4,9 +4,11 @@ from Database import save_search_history
 #Load Groq API Key
 from pydantic import SecretStr
 
-GROQ_API_KEY  = SecretStr("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")
-Flight_Search_API = SecretStr("a9ad9064156e3571492fff056984077ab75d82789c37093b6a16bc2952d41fbc")
-Hotel_Search_API = SecretStr("a9ad9064156e3571492fff056984077ab75d82789c37093b6a16bc2952d41fbc")
+import os
+
+GROQ_API_KEY  = os.getnv("groq")
+Flight_Search_API = os.getnv("serp")
+Hotel_Search_API = os.getnv("serp")
 
 if GROQ_API_KEY:
   print("Groq API Key retrived!")
