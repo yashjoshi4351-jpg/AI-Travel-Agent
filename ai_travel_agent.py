@@ -9,27 +9,27 @@ load_dotenv()
 
 try:
     import streamlit as st
-    api_key = st.secrets["groq"]   # when running on Streamlit Cloud
+    GROQ_API_KEY = st.secrets["groq"]   # when running on Streamlit Cloud
 except:
     from dotenv import load_dotenv
     load_dotenv()
-    api_key = os.getenv("groq")    # when running locally
+    GROQ_API_KEY = os.getenv("groq")    # when running locally
   
 try:
     import streamlit as st
-    api_key = st.secrets["serp"]   # when running on Streamlit Cloud
+    Flight_Search_API = st.secrets["serp"]   # when running on Streamlit Cloud
 except:
     from dotenv import load_dotenv
     load_dotenv()
-    api_key = os.getenv("serp")    # when running locally
+    Flight_Search_API = os.getenv("serp")    # when running locally
   
 try:
     import streamlit as st
-    api_key = st.secrets["serp"]   # when running on Streamlit Cloud
+    Hotel_Search_API = st.secrets["serp"]   # when running on Streamlit Cloud
 except:
     from dotenv import load_dotenv
     load_dotenv()
-    api_key = os.getenv("serp")    # when running locally
+    Hotel_Search_API = os.getenv("serp")    # when running locally
   
 if GROQ_API_KEY:
   print("Groq API Key retrived!")
